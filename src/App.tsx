@@ -204,9 +204,10 @@ function App() {
               </p>
             </div>
 
-            <div className="max-w-4xl mx-auto">
+            <div className="max-w-3xl mx-auto">
               <div className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100">
-                <div className="grid md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+
                   {/* Team Members */}
                   <div className="space-y-6">
                     <h4 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
@@ -259,15 +260,7 @@ function App() {
                         </div>
                       </div>
                       
-                      <div className="flex items-center space-x-3 p-4 bg-gray-50 rounded-xl">
-                        <Phone className="w-6 h-6 text-green-600" />
-                        <div>
-                          <p className="font-semibold text-gray-900">Phone</p>
-                          <a href="tel:+919656814553" className="text-green-600 hover:text-green-800 transition-colors">
-                            +91 9656814553
-                          </a>
-                        </div>
-                      </div>
+                      
                     </div>
                   </div>
                 </div>
