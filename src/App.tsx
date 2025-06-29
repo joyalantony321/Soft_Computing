@@ -103,16 +103,45 @@ function App() {
                 Access our curated dataset and interactive model training environment
               </p>
             </div>
+<div className="flex flex-wrap justify-center gap-8 max-w-7xl mx-auto">
 
-            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               {/* Dataset Card */}
-              <div className="group">
+              <div className="group max-w-[22rem] w-full">
+
                 <div className="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-teal-200">
                   <div className="flex items-center justify-between mb-6">
                     <div className="p-4 bg-gradient-to-r from-teal-500 to-cyan-500 rounded-xl text-white group-hover:scale-110 transition-transform duration-300">
                       <Database className="w-8 h-8" />
                     </div>
                     <ExternalLink className="w-6 h-6 text-gray-400 group-hover:text-teal-600 transition-colors duration-300" />
+                  </div>
+                  <h4 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-teal-800 transition-colors duration-300">
+                    Documentation
+                  </h4>
+                  <p className="text-gray-700 mb-6 leading-relaxed">
+                    Documentation offers structured details about a project’s purpose, setup, usage, and maintenance, guiding users and developers for better understanding, collaboration, and long-term project success.
+                  </p>
+                  <a
+                    href="https://docs.google.com/document/d/1Km5qL0896v0lkmIMMeN46KjouRbUhZllUojOMjwsIUs/edit?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center space-x-2 bg-gradient-to-r from-teal-600 to-cyan-600 text-white px-6 py-3 rounded-xl font-medium hover:from-teal-700 hover:to-cyan-700 transition-all duration-300 transform hover:scale-105"
+                  >
+                    <span>Access Doc</span>
+                    <ExternalLink className="w-5 h-5" />
+                  </a>
+                </div>
+              </div>
+
+              {/* Model Training Card */}
+              <div className="group max-w-[22rem] w-full">
+
+                <div className="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-purple-200">
+                  <div className="flex items-center justify-between mb-6">
+                    <div className="p-4 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-xl text-white group-hover:scale-110 transition-transform duration-300">
+                      <Laptop className="w-8 h-8" />
+                    </div>
+                    <ExternalLink className="w-6 h-6 text-gray-400 group-hover:text-purple-600 transition-colors duration-300" />
                   </div>
                   <h4 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-teal-800 transition-colors duration-300">
                     Cardiac Dataset
@@ -135,7 +164,8 @@ function App() {
               </div>
 
               {/* Model Training Card */}
-              <div className="group">
+              <div className="group max-w-[22rem] w-full">
+
                 <div className="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-purple-200">
                   <div className="flex items-center justify-between mb-6">
                     <div className="p-4 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-xl text-white group-hover:scale-110 transition-transform duration-300">
@@ -176,7 +206,7 @@ function App() {
 
             <div className="max-w-4xl mx-auto">
               <div className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100">
-                <div className="grid md:grid-cols-2 gap-8">
+                <div className="grid md:grid-cols-3 gap-8">
                   {/* Team Members */}
                   <div className="space-y-6">
                     <h4 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
